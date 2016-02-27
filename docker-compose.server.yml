@@ -86,8 +86,8 @@ kpi:
   # - 'kc-local.kobotoolbox.org:172.17.0.1'
 
 nginx:
-  image: kobotoolbox/nginx:docker_local
-  # build: ./base_images/nginx
+  # image: kobotoolbox/nginx:docker_local
+  build: ./base_images/nginx
   hostname: nginx
   env_file:
     - ./envfile.server.txt
